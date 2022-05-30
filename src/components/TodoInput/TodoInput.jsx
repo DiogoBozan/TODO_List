@@ -17,15 +17,12 @@ function TodoInput() {
   return (
     <>
       <form>
-        <label>
-          Write something
-          <input
-            placeholder="Write something"
-            value={todo}
-            type="text"
-            onChange={handleInput}
-          />
-        </label>
+        <input
+          placeholder="Write something"
+          value={todo}
+          type="text"
+          onChange={handleInput}
+        />
         <button onClick={handleSubmit}>Add List</button>
       </form>
       {todos.map((item) => (
